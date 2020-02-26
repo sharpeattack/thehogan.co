@@ -100,14 +100,23 @@ textarea {
 
 
 /* cursor */
+
 body {
-  cursor: url('../img/cursor.png'), auto;
   height: 100vh;
+  cursor: url('../img/cursor2.png'), auto;
 }
 
 .cursor {
-  width: 64px;
-  height: 64px;
+  background-image: url('../img/cursor.png');
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  pointer-events: none;
+
+  transition-duration: 100ms;
+  transition-timing-function: ease-out;
+
+
 }
 
 
@@ -122,6 +131,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+
+
   }
 
 
