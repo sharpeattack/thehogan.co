@@ -107,10 +107,7 @@ body {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-
-
-
-  
+  background-color: #FFFFFB;
 }
 
 
@@ -123,6 +120,7 @@ body {
   height: 64px;
   transition-timing-function: ease-out;
   pointer-events: none;
+  z-index: 1;
 
 }
 
@@ -171,19 +169,7 @@ body {
 
 
 
-  .footer {
-    position: absolute;
-    bottom: 40%;
 
-    width: 212px;
-    position: absolute;
-    line-height: 10px;
-    font-size: 20px;
-  }
-
-  .alt {
-    bottom: 48%;
-  }
 
 /* Main site styles */
 
@@ -197,54 +183,281 @@ body {
      justify-content: center;
    }
 
-.logo { 
+.holdingLogo { 
   width: 240px;
   top: 40%;
   position: absolute;
 }
 
+.logo {
+  width: 240px;
+
+}
+
+
 nav {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+padding: 2.5vw 0;
+
 
 }
 
-
-nav p {
- display: inline-block;
-}
-nav p a {
-  padding: 0 40px;
+nav a {
+text-decoration: none;
+color: black;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 1.5vw;
  }
 
+nav a:hover {
+  border-bottom: #000 solid 2px;
+}
+
+.logoHover:hover {
+  border: none;
+}
+
+nav .active {
+  border-bottom: #000 solid 2px;
+}
+nav .left {
+  padding-right: 10vw;
+}
+
+nav .right {
+  padding-left: 10vw;
+}
 
 
-.row {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+
+/* HOLDING PAGE */
+.holdingSection {
+  padding-top: 50vh;
+}
+
+
+/*  HOME STYLES */
+
+.flex-grid-center {
+  z-index: 99;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
-.difference {
-  mix-blend-mode: difference;
+.col {
+  width: auto;
+  text-align: center;
+  padding: 0 12px;
+  float: left;
 }
-.contactimg {
+.colText {
   
-  width: 25%;
+  text-transform: uppercase;
+  text-align: center;
+
+  font-size: 2vw;
+  line-height: 1.1vw;
+  font-weight: bold;
+}
+
+.homeSection {
+  padding-top: 35vh;
+}
+
+.overlayedImg { 
+  position: absolute;
+  width: 50%;
+  top: 24vh;
+  right: 2.5vw;
+
+  z-index: 9;
+}
+
+
+.line1 { 
+  position: absolute;
+
+  top: 54vh;
+  width: 28%;
+  left: 9vw;
+}
+
+.line2 { 
+  position: absolute;
+  width: 27%;
+  bottom: 15vh;
+  left: 34vw;
+}
+
+.line3 { 
+  position: absolute;
+
+  bottom: 3.5vh;
+  height: 13%;
+  right: 11vw;
+}
+
+
+
+
+/* CONTACT */
+
+
+.contactCol {
+  width: 35%;
+}
+
+.contactImg {
+  padding: 2.5vh 0;
+  max-width: 100% ;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
+
+.contactText {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  font-size: 18px;
+  padding-bottom: 12px;
+  margin: 0;
+
+}
+
+
+/* PASSWORD */
+.passwordSection {
+  padding-top: 25vh;
+}
+
+
+.passwordTitle {
+  display: block;
+  font-size: 18px;
+  
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+
+.passwordInput {
+  line-height: 1.9;
+    width: 280px;
+}
+
+.passwordBtn { 
+  display: block;
+  margin: 24px auto;
+  padding: 12px 18px;
+  font-weight: bold;
+    color: white;
+    background-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000;
+}
+
+
+
+@media (max-width: 1024px) {
+  
+  nav a {
+    font-size: 2.6vw;
+  }
+
+  .logo {
+    width: 200px;
+  }
+  .homeSection {
+    padding-top: 20vh;
+  }
+
+  .col {
+    padding: 0 10px;
+  }
+  
+  .colText{
+    font-size: 2.3vw;
+  }
+
+
+
+
+
+  .overlayedImg {
+    width: 60%;
+    top: 25vh;
+    right: 2.5vw;
+  }
+
+
+
+  /* CONTACT */
+
+  .contactCol {
+    width: 60%;
+  }
+
+}
+
+
+
+
+@media (max-width: 640px) { 
+
+/*  NAV */
+.logo {
+  width: 150px;
+}
+nav .left {
+  padding-right: 5vw;
+}
+
+nav .right {
+  padding-left: 5vw;
+}
+
+nav a {
+  font-size: 3vw;
+}
+
+
+
+.homeSection {
+  padding-top: 5vh;
+}
+
+.col {
+  padding: 0 8px;
+}
+
+.colText{
+  font-size: 2.3vw;
+}
+
+
+.overlayedImg {
+    width: 100%;
+    top: 22vh;
+    right: -11.5vw;
+}
+
+
+
+/* CONTACT */
+
+
+.contactCol {
+  width: 85%;
+}
+
+
+}
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
