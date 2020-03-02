@@ -278,7 +278,7 @@ nav .right {
 .line1 { 
   position: absolute;
 
-  top: 54vh;
+ bottom: 25.5vh;
   width: 28%;
   left: 9vw;
 }
@@ -286,14 +286,14 @@ nav .right {
 .line2 { 
   position: absolute;
   width: 27%;
-  bottom: 15vh;
+  bottom: 14.75vh;
   left: 34vw;
 }
 
 .line3 { 
   position: absolute;
 
-  bottom: 3.5vh;
+  bottom: 4.5vh;
   height: 13%;
   right: 11vw;
 }
@@ -381,7 +381,28 @@ nav .right {
     font-size: 2.3vw;
   }
 
-
+  .line1 { 
+    position: absolute;
+  
+    bottom: 44vh;
+    width: 29%;
+    left: 4vw;
+  }
+  
+  .line2 { 
+    position: absolute;
+    width: 30%;
+    bottom: 21vh;
+    left: 32vw;
+  }
+  
+  .line3 { 
+    position: absolute;
+    bottom: 8vh;
+    height: 10%;
+    right: 4.5vw;
+  }
+  
 
 
 
@@ -442,6 +463,33 @@ nav a {
     top: 22vh;
     right: -11.5vw;
 }
+
+.line1 { 
+  position: absolute;
+
+  bottom: 44vh;
+  width: 30%;
+  left: 3vw;
+}
+
+.line2 { 
+  position: absolute;
+  width: 32%;
+  bottom: 23.5vh;
+  left: 31vw;
+}
+
+.line3 { 
+  position: absolute;
+  bottom: 17.5vh;
+  height: 7%;
+  right: 2.5vw;
+}
+
+
+
+
+
 
 
 
