@@ -120,7 +120,7 @@ body {
   height: 64px;
   transition-timing-function: ease-out;
   pointer-events: none;
-  z-index: 1;
+  z-index: 6;
 
 }
 
@@ -250,6 +250,7 @@ nav .right {
   text-align: center;
   padding: 0 12px;
   float: left;
+  z-index: 4;
 }
 .colText {
   
@@ -259,10 +260,12 @@ nav .right {
   font-size: 2vw;
   line-height: 1.1vw;
   font-weight: bold;
+
 }
 
 .homeSection {
   padding-top: 35vh;
+
 }
 
 .overlayedImg { 
@@ -271,7 +274,21 @@ nav .right {
   top: 24vh;
   right: 2.5vw;
 
-  z-index: 9;
+  z-index: 5;
+}
+
+.bgGradient {
+  z-index: -1;
+  position: absolute;
+  top: -40%;
+  left: -40%;
+
+ 
+
+  opacity: 0.8;
+  transform: rotate(360deg);
+  transition: transform 20s;
+  
 }
 
 
