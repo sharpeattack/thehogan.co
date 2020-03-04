@@ -107,7 +107,7 @@ body {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background-color: #F4F4ED;
+ 
 }
 
 
@@ -164,7 +164,7 @@ body {
 
   body {
     font-family: 'Helvetica', 'Arial', sans-serif;
-
+    background-color: #F4F4ED;
   }
 
 
@@ -263,6 +263,10 @@ nav .right {
 
 }
 
+.colTextWrapper {
+
+}
+
 .homeSection {
   padding-top: 35vh;
 
@@ -270,26 +274,47 @@ nav .right {
 
 .overlayedImg { 
   position: absolute;
-  width: 50%;
-  top: 24vh;
-  right: 2.5vw;
+  width: 42%;
+  top: 11vh;
+  right: -0.5vw;
 
   z-index: 5;
 }
 
 .bgGradient {
+  width: 124%;
   z-index: -1;
   position: absolute;
-  top: -50%;
-  left: -50%;
+  bottom: -84%;
+  right: -36%;
 
- 
 
-  opacity: 0.9;
+
   transform: rotate(360deg);
-  transition: transform 20s;
+  transition: transform 40s;
+  
+
   
 }
+
+
+
+  .bgGradient2 {
+
+
+    z-index: -2;
+    position: absolute;
+    top: -50%;
+    left: -46%;
+  
+    transform: rotate(360deg);
+
+    
+  
+    
+  }
+  
+
 
 
 @-webkit-keyframes rotating /* Safari and Chrome */ {
@@ -321,11 +346,11 @@ nav .right {
   }
 }
 .rotating {
-  -webkit-animation: rotating 20s linear infinite;
-  -moz-animation: rotating 20s linear infinite;
-  -ms-animation: rotating 20s linear infinite;
-  -o-animation: rotating 20s linear infinite;
-  animation: rotating 20s linear infinite;
+  -webkit-animation: rotating 50s linear infinite;
+  -moz-animation: rotating 50s linear infinite;
+  -ms-animation: rotating 50s linear infinite;
+  -o-animation: rotating 50s linear infinite;
+  animation: rotating 50s linear infinite;
 }
 
 .line1 { 
@@ -358,7 +383,7 @@ nav .right {
 
 
 .contactCol {
-  width: 35%;
+  width: 49%;
 }
 
 .contactImg {
@@ -374,11 +399,19 @@ nav .right {
   font-weight: bold;
   text-align: left;
   font-size: 18px;
-  padding-bottom: 12px;
+  padding-bottom: 0px;
   margin: 0;
 
 }
 
+
+.contactHeader {
+  padding: 2.5vh 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  font-size: 27px;
+}
 
 /* PASSWORD */
 .passwordSection {
