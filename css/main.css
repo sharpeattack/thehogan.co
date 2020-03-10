@@ -283,7 +283,7 @@ nav .right {
 }
 
 .bgGradient {
-  opacity: 0.7;
+  opacity: 0.6;
   width: 118%;
   z-index: -1;
   position: absolute;
@@ -304,7 +304,7 @@ nav .right {
 
   .bgGradient2 {
 
-
+    opacity: 0.7;
     z-index: -2;
     position: absolute;
     top: -100%;
