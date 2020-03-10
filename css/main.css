@@ -283,11 +283,12 @@ nav .right {
 }
 
 .bgGradient {
-  width: 124%;
+  opacity: 0.7;
+  width: 118%;
   z-index: -1;
   position: absolute;
-  bottom: -84%;
-  right: -36%;
+  bottom: -130%;
+  right: -46%;
 
 
 
@@ -300,12 +301,13 @@ nav .right {
 
 
 
+
   .bgGradient2 {
 
 
     z-index: -2;
     position: absolute;
-    top: -50%;
+    top: -100%;
     left: -46%;
   
     transform: rotate(360deg);
@@ -353,6 +355,10 @@ nav .right {
   -o-animation: rotating 50s linear infinite;
   animation: rotating 50s linear infinite;
 }
+
+
+
+
 
 .line1 { 
   position: absolute;
@@ -497,9 +503,35 @@ nav .right {
 
   .overlayedImg {
     width: 60%;
-    top: 25vh;
-    right: 2.5vw;
+    top: 12vh;
+    right: -1vw;
   }
+
+
+
+
+
+  .bgGradient {
+    width: 124%;
+    bottom: -84%;
+    right: -56%;
+    
+  }
+  
+  
+    .bgGradient2 {  
+      top: -100%;
+      left: -60%;
+    }
+    
+
+
+
+
+
+
+
+
 
 
 
