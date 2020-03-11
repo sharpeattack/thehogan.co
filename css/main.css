@@ -99,7 +99,6 @@ textarea {
    ========================================================================== */
 
 
-/* cursor */
 
 body {
   margin: 0;
@@ -107,13 +106,21 @@ body {
   height: 100vh;
   width: 100%;
   overflow: hidden;
- 
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color: #F4F4ED;
 }
-
 
 .bold {
   font-weight: bold;
 }
+
+
+/*  */
+/* 
+ 
+*/
+/* Cursor */
+
 .img {
   position: absolute;
   width: 64px;
@@ -122,6 +129,7 @@ body {
   pointer-events: none;
   z-index: 6;
 
+  bottom: -50%;
 }
 
 .img-1 {
@@ -152,26 +160,16 @@ body {
   background: url(../img/img-5.png) no-repeat 50% 50%;
   background-size: cover;
   transition-duration: 200ms;
+  
 }
 
 
 
-
-
-
-/*   Holding page styles  */
-
-
-  body {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    background-color: #F4F4ED;
-  }
-
-
-
-
-
-/* Main site styles */
+/*  */
+/* 
+ 
+*/
+/* NAV styles */
 
    .logoWrapper {
      display: -webkit-box;
@@ -183,22 +181,12 @@ body {
      justify-content: center;
    }
 
-.holdingLogo { 
-  width: 240px;
-  top: 40%;
-  position: absolute;
-}
-
 .logo {
   width: 240px;
-
 }
-
 
 nav {
 padding: 2.5vw 0;
-
-
 }
 
 nav a {
@@ -235,8 +223,19 @@ nav .right {
   padding-top: 50vh;
 }
 
+.holdingLogo { 
+  width: 240px;
+  top: 40%;
+  position: absolute;
+}
 
-/*  HOME STYLES */
+
+
+/*  */
+/* 
+ 
+*/
+/*  HOME PAGE STYLES */
 
 .flex-grid-center {
   z-index: 99;
@@ -282,88 +281,10 @@ nav .right {
   z-index: 5;
 }
 
-.bgGradient {
-  opacity: 0.6;
-  width: 118%;
-  z-index: -1;
-  position: absolute;
-  bottom: -130%;
-  right: -46%;
-
-
-
-  transform: rotate(360deg);
-  transition: transform 40s;
-  
-
-  
-}
-
-
-
-
-  .bgGradient2 {
-
-    opacity: 0.7;
-    z-index: -2;
-    position: absolute;
-    top: -100%;
-    left: -46%;
-  
-    transform: rotate(360deg);
-
-    
-  
-    
-  }
-  
-
-
-
-@-webkit-keyframes rotating /* Safari and Chrome */ {
-  from {
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotating {
-  from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.rotating {
-  -webkit-animation: rotating 50s linear infinite;
-  -moz-animation: rotating 50s linear infinite;
-  -ms-animation: rotating 50s linear infinite;
-  -o-animation: rotating 50s linear infinite;
-  animation: rotating 50s linear infinite;
-}
-
-
-
-
-
 .line1 { 
   position: absolute;
 
- bottom: 25.5vh;
+ bottom: 24.5vh;
   width: 28%;
   left: 9vw;
 }
@@ -371,23 +292,86 @@ nav .right {
 .line2 { 
   position: absolute;
   width: 27%;
-  bottom: 14.75vh;
+  bottom: 13.75vh;
   left: 34vw;
 }
 
 .line3 { 
   position: absolute;
 
-  bottom: 4.5vh;
+  bottom: 3vh;
   height: 13%;
   right: 11vw;
 }
 
 
+/*  */
+/* 
+ 
+*/
+/*  Animated Gradients */
+  .bgGradient {
+    opacity: 0.6;
+    width: 118%;
+    z-index: -2;
+    position: absolute;
+    bottom: -130%;
+    right: -46%;
+    transform: rotate(360deg);
+    transition: transform 40s;
+  }
 
+  .bgGradient2 {
+    opacity: 0.7;
+    z-index: -1;
+    position: absolute;
+    top: -90%;
+    left: -36%;
+  
+    transform: rotate(360deg);
+  }
 
+  @-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotating {
+    -webkit-animation: rotating 50s linear infinite;
+    -moz-animation: rotating 50s linear infinite;
+    -ms-animation: rotating 50s linear infinite;
+    -o-animation: rotating 50s linear infinite;
+    animation: rotating 50s linear infinite;
+  }
+
+/*  */
+/* 
+ 
+*/
 /* CONTACT */
-
 
 .contactCol {
   width: 49%;
@@ -408,30 +392,36 @@ nav .right {
   font-size: 18px;
   padding-bottom: 0px;
   margin: 0;
-
 }
 
+.contactLink {
+  text-decoration: none;
+  color: #000;
+}
+
+.contactLink:hover {
+  border-bottom:#000 solid 2px;
+}
 
 .contactHeader {
-  padding: 2.5vh 0;
+  padding: 3.5vh 0;
   text-transform: uppercase;
   font-weight: bold;
   text-align: left;
   font-size: 27px;
 }
 
+
 /* PASSWORD */
 .passwordSection {
-
-  padding-top: 25vh;
+  padding-top: 20vh;
 }
-
 
 .passwordTitle {
   color: black!important;
   display: block;
   font-size: 18px;
-  
+  text-transform: uppercase;
   font-weight: bold;
   padding-bottom: 24px;
 }
@@ -456,7 +446,8 @@ nav .right {
 
 
 @media (max-width: 1024px) {
-  
+
+  /* NAV */
   nav a {
     font-size: 2.6vw;
   }
@@ -476,10 +467,17 @@ nav .right {
     font-size: 2.3vw;
   }
 
+
+  .overlayedImg {
+    width: 50%;
+    top: 12vh;
+    right: -1vw;
+  }
+
   .line1 { 
     position: absolute;
   
-    bottom: 44vh;
+    bottom: 41vh;
     width: 29%;
     left: 4vw;
   }
@@ -497,19 +495,6 @@ nav .right {
     height: 10%;
     right: 4.5vw;
   }
-  
-
-
-
-  .overlayedImg {
-    width: 60%;
-    top: 12vh;
-    right: -1vw;
-  }
-
-
-
-
 
   .bgGradient {
     width: 124%;
@@ -517,9 +502,8 @@ nav .right {
     right: -56%;
     
   }
-  
-  
-    .bgGradient2 {  
+
+  .bgGradient2 {  
       top: -100%;
       left: -60%;
     }
@@ -606,6 +590,19 @@ nav a {
   height: 7%;
   right: 2.5vw;
 }
+
+.bgGradient {
+  width: 200%;
+  bottom: -80%;
+  right: -160%%;
+  
+}
+
+.bgGradient2 {  
+    top: -80%;
+    left: -100%;
+  }
+  
 
 
 
