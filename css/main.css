@@ -129,7 +129,7 @@ body {
   pointer-events: none;
   z-index: 6;
 
-  bottom: -50%;
+  top: -200%;
 }
 
 .img-1 {
@@ -319,6 +319,8 @@ nav .right {
     right: -46%;
     transform: rotate(360deg);
     transition: transform 40s;
+
+    overflow: hidden;
   }
 
   .bgGradient2 {
@@ -329,6 +331,8 @@ nav .right {
     left: -36%;
   
     transform: rotate(360deg);
+    overflow: hidden;
+
   }
 
   @-webkit-keyframes rotating /* Safari and Chrome */ {
@@ -454,6 +458,11 @@ nav .right {
   width: 30%;
 }
 
+.videoRowEnd {
+  padding-bottom: 3.5vh;
+}
+
+
 @media (max-width: 1024px) {
 
   /* NAV */
@@ -519,20 +528,21 @@ nav .right {
     
 
 
-
-
-
-
-
-
-
-
-
   /* CONTACT */
 
   .contactCol {
     width: 60%;
   }
+
+
+/* WORK */
+
+.videoCol {
+  width: 40%;
+}
+
+
+
 
 }
 
@@ -602,31 +612,31 @@ nav a {
 
 .bgGradient {
   width: 200%;
-  bottom: -80%;
-  right: -160%%;
+  bottom: -60%;
+  right: -120%;
   
 }
 
 .bgGradient2 {  
-    top: -80%;
-    left: -100%;
+    top: -120%;
+    left: -130%;
   }
-  
-
-
-
-
-
-
-
 
 /* CONTACT */
-
-
 .contactCol {
-  width: 85%;
+  width: 90%;
+
 }
 
+.contactHeader {
+  font-size: 24px;
+}
+
+/* WORK */
+
+.videoCol {
+  width: 45%;
+}
 
 }
 
