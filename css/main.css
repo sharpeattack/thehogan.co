@@ -374,15 +374,7 @@ nav .right {
 /* CONTACT */
 
 .contactCol {
-  width: 49%;
-}
-
-.contactImg {
-  padding: 2.5vh 0;
-  max-width: 100% ;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  width: 50%;
 }
 
 .contactText {
@@ -444,6 +436,23 @@ nav .right {
 }
 
 
+/*  VIDEO */
+
+.work {
+  overflow: scroll;
+}
+.videoRowStart {
+  padding-top: 3.5vh;
+}
+
+.videoRow .col {
+  padding: 0 1.25vw 2.5vw 1.25;
+  margin: 0;
+}
+
+.videoCol {
+  width: 30%;
+}
 
 @media (max-width: 1024px) {
 
