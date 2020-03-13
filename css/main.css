@@ -98,7 +98,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body,
+.home,
 html {
      position: fixed;
    }
