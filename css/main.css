@@ -194,14 +194,14 @@ padding: 2.5vw 0;
 
 nav a {
 text-decoration: none;
-color: black;
+color: #222;
 text-transform: uppercase;
 font-weight: bold;
 font-size: 1.5vw;
  }
 
 nav a:hover {
-  border-bottom: #000 solid 2px;
+  border-bottom: #222 solid 2px;
 }
 
 .logoHover:hover {
@@ -209,7 +209,7 @@ nav a:hover {
 }
 
 nav .active {
-  border-bottom: #000 solid 2px;
+  border-bottom: #222 solid 2px;
 }
 nav .left {
   padding-right: 10vw;
@@ -267,7 +267,7 @@ nav .right {
 
 .colTextWrapper {
   text-decoration: none;
-  color: black;
+  color: #222;
 }
 
 .homeSection {
@@ -395,11 +395,11 @@ nav .right {
 
 .contactLink {
   text-decoration: none;
-  color: #000;
+  color: #222;
 }
 
 .contactLink:hover {
-  border-bottom:#000 solid 2px;
+  border-bottom:#222 solid 2px;
 }
 
 .contactHeader {
@@ -417,7 +417,7 @@ nav .right {
 }
 
 .passwordTitle {
-  color: black!important;
+  color: #222!important;
   display: block;
   font-size: 18px;
   text-transform: uppercase;
@@ -436,7 +436,7 @@ nav .right {
   padding: 12px 18px;
   font-weight: bold;
     color: white;
-    background-color: black;
+    background-color: #222;
     border-width: 2px;
     border-style: solid;
     border-color: #000;
