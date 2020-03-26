@@ -103,6 +103,10 @@ html {
      position: fixed;
    }
 
+.site-wrapper {
+  overflow-x:hidden
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -119,9 +123,8 @@ body {
 
 
 /*  */
-/* 
- 
-*/
+
+
 /* Cursor */
 
 .img {
@@ -133,6 +136,9 @@ body {
   z-index: 6;
 
   top: -200%;
+
+  visibility: visible;
+
 }
 
 .img-1 {
@@ -167,11 +173,6 @@ body {
 }
 
 
-
-/*  */
-/* 
- 
-*/
 /* NAV styles */
 
    .logoWrapper {
@@ -219,25 +220,6 @@ nav .right {
   padding-left: 10vw;
 }
 
-
-
-/* HOLDING PAGE */
-.holdingSection {
-  padding-top: 50vh;
-}
-
-.holdingLogo { 
-  width: 240px;
-  top: 40%;
-  position: absolute;
-}
-
-
-
-/*  */
-/* 
- 
-*/
 /*  HOME PAGE STYLES */
 
 .flex-grid-center {
@@ -275,13 +257,9 @@ nav .right {
 
 }
 
-.overlayedImg { 
-  position: absolute;
-  width: 42%;
-  top: 11vh;
-  right: -0.5vw;
-
+.lines {
   z-index: 5;
+  pointer-events: none;
 }
 
 .line1 { 
@@ -308,76 +286,123 @@ nav .right {
 }
 
 
-/*  */
-/* 
- 
-*/
-/*  Animated Gradients */
-  .bgGradient {
-    opacity: 0.6;
-    width: 118%;
-    z-index: -2;
-    position: absolute;
-    bottom: -130%;
-    right: -46%;
-    transform: rotate(360deg);
-    transition: transform 40s;
+/*  BLOB */
 
-    overflow: hidden;
-  }
+.blob-wrapper {
+  overflow: hidden;
+}
 
-  .bgGradient2 {
-    opacity: 0.7;
-    z-index: -1;
-    position: absolute;
-    top: -90%;
-    left: -36%;
+@keyframes from0to360 {
+  from{transform:rotate(0);}
+  to{transform:rotate(360deg);}
+}
+@keyframes from360to0 {
+  from{transform:rotate(360deg);}
+  to{transform:rotate(0deg);}
+}
+@keyframes scaleUp {
+  from{transform:scale(0.8);}
+  to{transform:scale(1);}
+}
+@keyframes scaleDown {
+  from{transform:scale(1);}
+  to{transform:scale(0.8);}
+}
+
+@keyframes from360to0scaled {
+  from{transform:rotate(360deg) scale(1.1); }
+  to{transform:rotate(0deg) scale(0.25);}
+}
+
+.blob-svg {
   
-    transform: rotate(360deg);
-    overflow: hidden;
+  will-change: transform;
+  position: absolute;
+  z-index: -1;
+  opacity: 1;
+  filter: blur(20px);
+  overflow: hidden;
+  visibility: default;
+}
 
-  }
+.blob-svg-home1 {
+  transform: translate(-50%, -50%);
+  left: 10%;
+  bottom: -90%;
+}
 
-  @-webkit-keyframes rotating /* Safari and Chrome */ {
-    from {
-      -webkit-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    to {
-      -webkit-transform: rotate(360deg);
-      -o-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes rotating {
-    from {
-      -ms-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -webkit-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    to {
-      -ms-transform: rotate(360deg);
-      -moz-transform: rotate(360deg);
-      -webkit-transform: rotate(360deg);
-      -o-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-  .rotating {
-    -webkit-animation: rotating 50s linear infinite;
-    -moz-animation: rotating 50s linear infinite;
-    -ms-animation: rotating 50s linear infinite;
-    -o-animation: rotating 50s linear infinite;
-    animation: rotating 50s linear infinite;
-  }
+.blob-svg-home2 {
+  top: -140%;
+  right: -100%;
+}
 
-/*  */
-/* 
- 
-*/
+.blob-svg-contact {
+  top: 45%;
+  left: 40%;
+}
+
+.blob-svg-password {
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 850px;
+}
+
+
+.circle1 {
+  animation: from0to360 10s linear infinite;
+  cx: 150;
+  cy: 145;
+  r: 100;
+  fill: white;
+  transform-origin: 145px 150px;
+}
+.circle2 {
+  animation: from360to0 20s linear infinite;
+  cx: 150;
+  cy: 155;
+  r: 100;
+  fill: white;
+  transform-origin: 160px 150px;
+}
+
+.circle3 {
+  animation: from0to360 30s linear infinite alternate;
+  cx: 145;
+  cy: 150;
+  r: 100;
+  fill: white;
+  transform-origin: 150px 145px;
+}
+
+.circle4 {
+  animation: from360to0 25s linear infinite;
+  cx: 155;
+  cy: 150;
+  r: 100;
+  fill: white;
+  transform-origin: 150px 155px;
+}
+
+.ellipse1 {
+  animation: from360to0scaled 20s linear infinite alternate;
+  rx: 120;
+  ry: 100;
+  cx: 150;
+  cy: 150;
+  fill: white;
+  transform-origin: 130px 155px;
+}
+.ellipse2 {
+  animation: from0to360 15s linear infinite;
+  rx: 120;
+  ry: 100;
+  cx: 150;
+  cy: 150;
+  fill: white;
+  transform-origin: 150px 155px;
+}
+
 /* CONTACT */
 
 .contactCol {
@@ -386,8 +411,9 @@ nav .right {
 
 .contactText {
   text-transform: uppercase;
+
   font-weight: bold;
-  text-align: left;
+  text-align: center;
   font-size: 18px;
   padding-bottom: 0px;
   margin: 0;
@@ -403,11 +429,12 @@ nav .right {
 }
 
 .contactHeader {
-  padding: 3.5vh 0;
+  padding: 10vh 0 3.5vh;
   text-transform: uppercase;
   font-weight: bold;
   text-align: left;
   font-size: 27px;
+  text-align: center;
 }
 
 
@@ -442,7 +469,6 @@ nav .right {
     border-color: #000;
 }
 
-
 /*  VIDEO */
 
 .work {
@@ -464,7 +490,16 @@ nav .right {
 .videoRowEnd {
   padding-bottom: 3.5vh;
 }
+@media (max-width: 1360px) {
 
+  .blob-svg-home2 {
+
+    top: -1000px;
+    right: -1800px;
+  }
+
+
+}
 
 @media (max-width: 1024px) {
 
@@ -486,13 +521,6 @@ nav .right {
   
   .colText{
     font-size: 2.3vw;
-  }
-
-
-  .overlayedImg {
-    width: 50%;
-    top: 12vh;
-    right: -1vw;
   }
 
   .line1 { 
@@ -517,18 +545,29 @@ nav .right {
     right: 4.5vw;
   }
 
-  .bgGradient {
-    width: 124%;
-    bottom: -84%;
-    right: -56%;
-    
-  }
 
-  .bgGradient2 {  
-      top: -100%;
-      left: -60%;
-    }
-    
+  .blob-svg-home1 {
+    left: 10%;
+    bottom: -90%;
+  }
+  
+  .blob-svg-home2 {
+
+    top: -1000px;
+    right: -1800px;
+  }
+  
+  .blob-svg-contact {
+    top: 45%;
+    left: 40%;
+  }
+  
+  .blob-svg-password {
+    top: 49%;
+    left: 50%;
+    width: 800px;
+  }
+  
 
 
   /* CONTACT */
@@ -544,15 +583,47 @@ nav .right {
   width: 40%;
 }
 
+}
 
+@media (max-width: 768px) { 
+
+
+
+  .blob-svg-home1 {
+    left: -10%;
+    bottom: -110%;
+  }
+  
+  .blob-svg-home2 {
+  
+    top: -1000px;
+    right: -2040px;
+  }
 
 
 }
-
-
-
-
 @media (max-width: 640px) { 
+
+  .home-bg {
+    background-image: url(../mobile-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%; 
+    overflow: hidden;
+
+    position: fixed
+  }
+
+
+  .img {
+    visibility: hidden;
+  }
 
 /*  NAV */
 .logo {
@@ -570,10 +641,8 @@ nav a {
   font-size: 3vw;
 }
 
-
-
 .homeSection {
-  padding-top: 5vh;
+  padding-top: 15vh;
 }
 
 .col {
@@ -584,46 +653,51 @@ nav a {
   font-size: 2.3vw;
 }
 
-
-.overlayedImg {
-    width: 100%;
-    top: 22vh;
-    right: -11.5vw;
-}
-
 .line1 { 
   position: absolute;
 
-  bottom: 44vh;
+  bottom: 49.25vh;
   width: 30%;
-  left: 3vw;
+  left: 1vw;
 }
 
 .line2 { 
   position: absolute;
   width: 32%;
-  bottom: 23.5vh;
+  bottom: 48vh;
   left: 31vw;
 }
 
 .line3 { 
   position: absolute;
-  bottom: 17.5vh;
+  bottom: 42.5vh;
   height: 7%;
-  right: 2.5vw;
+  right: 1vw;
 }
 
-.bgGradient {
-  width: 200%;
-  bottom: -60%;
-  right: -120%;
-  
+
+.home-bg .blob-svg {
+  visibility: hidden;
 }
 
-.bgGradient2 {  
-    top: -120%;
-    left: -130%;
-  }
+
+.blob-svg-contact {
+  top: 35%;
+  left: 20%;
+
+
+}
+
+.blob-svg-password {
+  top: 45.5%;
+  left: 50%;
+  width: 450px;
+
+} 
+
+
+
+
 
 /* CONTACT */
 .contactCol {
@@ -632,7 +706,7 @@ nav a {
 }
 
 .contactHeader {
-  font-size: 24px;
+  font-size: 4.5vw;
 }
 
 /* WORK */

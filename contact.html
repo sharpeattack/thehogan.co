@@ -25,7 +25,8 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="home">
+  <div class="site-wrapper">
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -54,7 +55,7 @@
   <div class="col contactCol">
     <!-- <img class="contactImg" src="/img/evilsean.jpg"> -->
 
-    <p class="contactHeader">The Hogan offers Music Search, Rights Negotiation, Clearance & Licensing, Original Composition, Re-Records, Sound Design And Artist Representation.</p>
+    <p class="contactHeader">The Hogan offers Music Search, Rights Negotiation, Clearance & Licensing, Original Composition, <span style="white-space: nowrap;">Re-Records,</span> Sound Design, And Artist Representation.</p>
     <p class="contactText"> Sean Hogan</p>
 
       <p class="contactText">
@@ -63,7 +64,7 @@
       </p>
     
       <p class="contactText">
-        <a class="contactLink" href="tel:+447725608161"> +447725 608161
+        <a class="contactLink" href="tel:+447725608161"> +44 7725 608 161
         </a>
       </p>
 
@@ -71,6 +72,34 @@
   </div>
 
   </div>
+
+
+    <svg class="blob-svg blob-svg-contact" width="1000" height="1000" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" filter="url(#blob-filter)">
+      <defs>
+        <filter id="blob-filter">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+        <mask id="blob-mask">
+          <ellipse class="ellipse1"></ellipse>
+          <ellipse class="ellipse2"></ellipse>
+          <circle class="circle1"></circle>
+          <circle class="circle2"></circle>
+          <circle class="circle3"></circle>
+          <circle class="circle4"></circle>
+        </mask>
+        <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="0" 
+          gradientUnits="userSpaceOnUse" 
+          gradientTransform="matrix(-440.643 439.505 -439.505 -440.643 762.505 247.708)">
+          
+          <stop offset="100%" stop-color="#004C79" />
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="600" height="600" mask="url(#blob-mask)" fill="url(#gradient)"/>
+    </svg>
+
+
 
   <div class="flex-grid-center contactSection">
 
@@ -101,6 +130,7 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+</div>
 </body>
 
 </html>

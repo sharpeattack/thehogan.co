@@ -25,7 +25,10 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body class="home">
+<body class="home home-bg">
+<div class="site-wrapper">
+
+
   <div class="cursor"></div>
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -52,6 +55,59 @@
   </nav>
 
 
+
+  <!-- BLOBS -->
+  <svg class="blob-svg blob-svg-home2" width="2500" height="2500" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" filter="url(#blob-filter)">
+    <defs>
+      <filter id="blob-filter">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feBlend in="SourceGraphic" in2="goo" />
+      </filter>
+      <mask id="blob-mask">
+        <ellipse class="ellipse1"></ellipse>
+        <ellipse class="ellipse2"></ellipse>
+        <circle class="circle1"></circle>
+        <circle class="circle2"></circle>
+        <circle class="circle3"></circle>
+        <circle class="circle4"></circle>
+      </mask>
+      <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="0" 
+        gradientUnits="userSpaceOnUse" 
+        gradientTransform="matrix(-440.643 439.505 -439.505 -440.643 762.505 247.708)">
+        <stop offset="100%" stop-color="#C51B11" />
+
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="600" height="600" mask="url(#blob-mask)" fill="url(#gradient)"/>
+  </svg>
+
+
+  <svg class="blob-svg blob-svg-home1" width="2000" height="1000" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" filter="url(#blob-filter)">
+    <defs>
+      <filter id="blob-filter">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="100" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feBlend in="SourceGraphic" in2="goo" />
+      </filter>
+      <mask id="blob-mask">
+        <ellipse class="ellipse1"></ellipse>
+        <ellipse class="ellipse2"></ellipse>
+        <circle class="circle1"></circle>
+        <circle class="circle2"></circle>
+        <circle class="circle3"></circle>
+        <circle class="circle4"></circle>
+      </mask>
+      <linearGradient id="gradient2" x1="0" y1="0" x2="1" y2="0" 
+        gradientUnits="userSpaceOnUse" 
+        gradientTransform="matrix(-440.643 439.505 -439.505 -440.643 762.505 247.708)">
+          <stop offset="1" stop-color="#FF502A"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="600" height="600" mask="url(#blob-mask)" fill="url(#gradient2)"/>
+  </svg>
+
+  
   <div class="flex-grid-center homeSection">
     <div class="col ">
       <a href="contact.html" class="colTextWrapper" >
@@ -77,40 +133,8 @@
       <p class="colText">Music Supervision</p>
       <p class="colText">Music Supervision</p>
       <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
-      <p class="colText">Music Supervision</p>
+
+
     </a>
     </div>
     <div class="col">
@@ -137,40 +161,7 @@
       <p class="colText">Original Composition</p>
       <p class="colText">Original Composition</p>
       <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
-      <p class="colText">Original Composition</p>
+
       </a>
     </div>
     <div class="col">
@@ -197,49 +188,16 @@
       <p class="colText">Artist Representation</p>
       <p class="colText">Artist Representation</p>
       <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
-      <p class="colText">Artist Representation</p>
+
+  
       </a>
     </div>
   </div>
    
 <!-- HOME Images -->
-  <img class="overlayedImg" src="img/layeredImg.png">
-  <img class="line1" src="img/line1.svg">
-  <img class="line2" src="img/line2.svg">
-  <img class="line3" src="img/line3.svg">
+  <img class="lines line1" src="img/line1111.svg">
+  <img class="lines line2" src="img/line2222.svg">
+  <img class="lines line3" src="img/line3333.svg">
 
 <!-- CURSOR -->
   <div class="img-1 img"></div>
@@ -247,16 +205,6 @@
   <div class="img-3 img"></div>
   <div class="img-4 img"></div>
   <div class="img-5 img"></div>
-
-<!-- BG Rotations -->
-  <img class="bgGradient rotating" src="/img/blob.jpg">
-  <img class="bgGradient2 rotating" src="/img/bg-rotate.png">
-
-
-
-
-
-
 
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -270,6 +218,8 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+</div>
 </body>
 
 </html>
