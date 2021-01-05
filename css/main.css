@@ -122,7 +122,6 @@ body {
 }
 
 
-/*  */
 
 
 /* Cursor */
@@ -428,8 +427,10 @@ nav .right {
   border-bottom:#222 solid 2px;
 }
 
-.contactHeader {
-  padding: 10vh 0 3.5vh;
+
+
+.header {
+  padding: 10vh 0 0vh;
   text-transform: uppercase;
   font-weight: bold;
   text-align: left;
@@ -438,9 +439,17 @@ nav .right {
 }
 
 
+.divider {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 15vh 0 0 0;
+  border-bottom: 2px solid #222;
+}
+
 /* PASSWORD */
 .passwordSection {
-  padding-top: 20vh;
+  padding: 5vh 5vw 16vh 5vw;
+
 }
 
 .passwordTitle {
@@ -490,6 +499,8 @@ nav .right {
 .videoRowEnd {
   padding-bottom: 3.5vh;
 }
+
+
 @media (max-width: 1360px) {
 
   .blob-svg-home2 {
@@ -682,7 +693,7 @@ nav a {
 
 
 .blob-svg-contact {
-  top: 35%;
+  top: 25%;
   left: 20%;
 
 
@@ -704,8 +715,10 @@ nav a {
   width: 90%;
 
 }
-
-.contactHeader {
+.workHeader {
+  font-size: 4.5vw;
+}
+.header {
   font-size: 4.5vw;
 }
 
