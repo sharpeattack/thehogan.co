@@ -213,10 +213,12 @@ nav .active {
 }
 nav .left {
   padding-right: 10vw;
+  width: 80px;
 }
 
 nav .right {
   padding-left: 10vw;
+  width: 80px ;
 }
 
 /*  HOME PAGE STYLES */
